@@ -5,8 +5,6 @@ import java.io.FileOutputStream;
 import java.io.DataOutputStream;
 import java.io.OutputStream;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 public class PersistanceArray {
     //question 1
     public static void saveArrayInt(String f, int[] tab) throws IOException {
@@ -29,6 +27,7 @@ public class PersistanceArray {
         	r = is.readInt();
         	res[i] = r;
         }
+        is.close();
         return res;
     }
     //question 3 :
