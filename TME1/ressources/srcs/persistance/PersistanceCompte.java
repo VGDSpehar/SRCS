@@ -8,7 +8,7 @@ import java.io.OutputStream;
 import srcs.banque.*;
 
 public class PersistanceCompte {
-    public static void SaveCompte(String f, Compte e) throws IOException {
+    public static void saveCompte(String f, Compte e) throws IOException {
         OutputStream out = new FileOutputStream(f);
         e.save(out);
         out.close();
